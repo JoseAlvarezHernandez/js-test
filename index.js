@@ -36,7 +36,7 @@ function loopThrough(newArr, steps) {
 }
 
 /*
- * Complete the function below.
+ * Return odd numbers between a start and end number given
  */
 function oddNumbers(l, r) {
   let numbers = [];
@@ -44,4 +44,16 @@ function oddNumbers(l, r) {
     numbers = [...numbers, i];
   }
   return numbers;
+}
+
+/*
+* A function that validates IPV4 
+*/
+
+function isIPv4Address(inputString) {
+  let IPv4 = inputString.split('.');
+  if(IPv4.length!== 4)
+      return false;
+
+  return IPv4.every(x => ( +x >= 0 && +x <= 255 && x !== ''));
 }
