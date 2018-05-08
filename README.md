@@ -1,2 +1,3 @@
-# js-test
-JavaScript Function that will be useful in an interview
+## js-test
+
+# JavaScript Function that will be useful in an interview
