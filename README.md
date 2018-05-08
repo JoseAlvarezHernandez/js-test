@@ -1,9 +1,7 @@
 # JavaScript Function that will be useful in an interview
 
-/*
- * Find Number in array of numbers
- */
-```js
+ * Find a number in array of numbers
+```javascript
 function findNumber(arr, k) {
   let isIn = 'NO';
   for (let i = 0; i < arr.length; i++) if (arr[i] == k) {
@@ -12,9 +10,9 @@ function findNumber(arr, k) {
   return isIn;
 }
 ```
-/**
+
  * Avoid Obstacles
- */
+
 function avoidObstacles(inputArray) {
   const max = Math.max(...inputArray) + 1;
   const newArr = [];
