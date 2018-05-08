@@ -1,6 +1,19 @@
 # JavaScript Function that will be useful in an interview
 
+ * Function that return a factorial of a given number
+ 
+ ```javascript
+ function factorial(n){
+   let result = n;
+   for(let i = 2; i < n; i++ ){
+     result *= i;
+   };
+   return result;
+ }
+ ```
+ 
  * Find a number in array of numbers
+
 ```javascript
 function findNumber(arr, k) {
   let isIn = 'NO';
