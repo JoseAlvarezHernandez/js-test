@@ -1,5 +1,17 @@
 # JavaScript Function that will be useful in an interview
-
+ 
+ * Function that return Fibonacci positions
+ 
+ ```javascript
+ function fibonacci(nPositions) {
+   result = [0, 1];
+   for (let i = 1; i <= nPositions; i++) {
+     result = [...result, (result[i - 1] + result[i])];
+   }
+   return result.join(', ');
+ }
+ ```
+ 
  * Function that return a factorial of a given number
  
  ```javascript
