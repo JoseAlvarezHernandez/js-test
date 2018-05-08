@@ -87,3 +87,22 @@ function isIPv4Address(inputString) {
   return IPv4.every(x => ( +x >= 0 && +x <= 255 && x !== ''));
 }
 ```
+
+* Function that given a string can tell if its palindrome
+
+```javascript
+function checkPalindrome(inputString) {
+  oldInput = inputString.toLowerCase().replace(/\s/img,'');
+  inputString = inputString.toLowerCase().split('').reverse().join('').replace(/\s/img,'');
+  return oldInput == inputString;
+}
+```
+
+* area of a polygon for a given number
+
+```javascript
+function shapeArea(n) {
+    let i = n + (n - 1 );
+    return Math.round( (i * i) / 2);
+}
+```
