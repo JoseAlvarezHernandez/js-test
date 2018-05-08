@@ -11,15 +11,16 @@ function findNumber(arr, k) {
 }
 ```
 
- * Avoid Obstacles
+ * Avoid Obstacles 
 
+```javascript
 function avoidObstacles(inputArray) {
   const max = Math.max(...inputArray) + 1;
   const newArr = [];
+  
   for (let i = 0; i < max; i++) {
     newArr.push(inputArray.some(x => x == i) ? i : null);
   }
-
   return loopThrough(newArr, 1);
 }
 
@@ -35,10 +36,11 @@ function loopThrough(newArr, steps) {
   }
   return steps;
 }
+```
 
-/*
  * Return odd numbers between a start and end number given
- */
+ 
+```javascript
 function oddNumbers(l, r) {
   let numbers = [];
   for (let i = l; i <= r; i++) if (i % 2 == 1) {
@@ -46,11 +48,12 @@ function oddNumbers(l, r) {
   }
   return numbers;
 }
+```
 
-/*
+
 * A function that validates IPV4 
-*/
 
+```javascript
 function isIPv4Address(inputString) {
   let IPv4 = inputString.split('.');
   if(IPv4.length!== 4)
@@ -58,3 +61,4 @@ function isIPv4Address(inputString) {
 
   return IPv4.every(x => ( +x >= 0 && +x <= 255 && x !== ''));
 }
+```
