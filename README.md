@@ -3,13 +3,13 @@
  * Function that return Fibonacci positions
  
  ```javascript
- function fibonacci(nPositions) {
-   result = [0, 1];
-   for (let i = 1; i <= nPositions; i++) {
-     result = [...result, (result[i - 1] + result[i])];
-   }
-   return result.join(', ');
- }
+ function getFibonaccis(nPositions) {
+  let result = []
+  for (let i = 0; i < nPositions; i++) {
+    result = [...result, (result[i - 2] || 0) +  (result[i - 1] || i)]
+  }
+  return result.join(', ');
+}
  ```
  
  * Function that return a factorial of a given number
@@ -22,6 +22,10 @@
    };
    return result;
  }
+ ```
+ or
+ ```javascript
+ const factorial = n => Array(n).fill(n).reduce((total, val, index) =>  total * (val - index))
  ```
  
  * Find a number in array of numbers
