@@ -27,13 +27,13 @@
  * Find a number in array of numbers
 
 ```javascript
-function findNumber(arr, k) {
-  let isIn = 'NO';
-  for (let i = 0; i < arr.length; i++) if (arr[i] == k) {
-    isIn = 'YES';
-  }
-  return isIn;
+function isIn(arr, n){
+	return arr.some(value => value === n)
 }
+```
+or 
+```javascript
+const isIn = (arr, n) => arr.some(value => value === n)
 ```
 
  * Avoid Obstacles 
