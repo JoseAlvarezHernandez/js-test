@@ -110,3 +110,35 @@ function shapeArea(n) {
     return Math.round( (i * i) / 2);
 }
 ```
+
+* Call a function inner to get the sum of two number
+
+```javascript
+function sum(a){
+  return function(b){
+    return a + b
+  }
+}
+```
+or 
+```javascript
+const sum = a => b => a + b
+```
+
+* Plus Minus
+*** Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.
+
+```javascript
+function plusMinus(arr){
+    let res = arr.map(x => x == 0 ? null : x > 0 ? true : false)
+    return [
+        getResult(res, true, arr.length), 
+        getResult(res, false, arr.length),
+        getResult(res, null, arr.length)
+    ]
+}
+​
+function getResult(arr, compare, divided){
+    return (arr.reduce((total, x) => total + (x == compare ? 1: 0)) / divided).toFixed(6)
+}
+```
