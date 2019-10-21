@@ -152,11 +152,11 @@ function plusMinus(arr) {
 
 __*Staircase__
 
-*Complete the staircase function in the editor below. It should print a staircase as described above.
+Complete the staircase function in the editor below. It should print a staircase as described above.
 
 staircase has the following parameter(s):
 
-n: an integer*
+n: an integer
 
 
 ```javascript
