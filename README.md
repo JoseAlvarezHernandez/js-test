@@ -126,7 +126,7 @@ const sum = a => b => a + b
 ```
 
 * Plus Minus
-*** Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.
+*Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.*
 
 ```javascript
 function plusMinus(arr){
