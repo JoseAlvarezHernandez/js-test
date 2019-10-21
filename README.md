@@ -137,16 +137,15 @@ __* Plus Minus__
 *Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.*
 
 ```javascript
-function plusMinus(arr){
-    let res = arr.map(x => x == 0 ? null : x > 0 ? true : false)
-    return [
+function getResult(arr, compare, divided){
+    return (arr.reduce((total, x) => total + (x == compare ? 1: 0), 0) / divided).toFixed(6)
+}
+function plusMinus(arr) {
+   let res = arr.map(x => x == 0 ? null : x > 0 ? true : false)
+   return [
         getResult(res, true, arr.length), 
         getResult(res, false, arr.length),
         getResult(res, null, arr.length)
     ]
-}
-​
-function getResult(arr, compare, divided){
-    return (arr.reduce((total, x) => total + (x == compare ? 1: 0)) / divided).toFixed(6)
 }
 ```
