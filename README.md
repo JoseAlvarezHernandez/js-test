@@ -1,6 +1,8 @@
 # JavaScript Function that will be useful in an interview
+
+
  
- * Function that return Fibonacci positions
+ __* Function that return Fibonacci positions__
  
  ```javascript
  function getFibonaccis(nPositions) {
@@ -12,7 +14,8 @@
 }
  ```
  
- * Function that return a factorial of a given number
+ 
+__* Function that return a factorial of a given number__
  
  ```javascript
  function factorial(n){
@@ -23,24 +26,26 @@
    return result;
  }
  ```
- or
+__or__
  ```javascript
  const factorial = n => Array(n).fill(n).reduce((total, val, index) =>  total * (val - index))
  ```
  
- * Find a number in array of numbers
+ 
+__* Find a number in array of numbers__
 
 ```javascript
 function isIn(arr, n){
 	return arr.some(value => value === n)
 }
 ```
-or 
+__or__
 ```javascript
 const isIn = (arr, n) => arr.some(value => value === n)
 ```
 
- * Avoid Obstacles 
+
+__* Avoid Obstacles__
 
 ```javascript
 function avoidObstacles(inputArray) {
@@ -67,7 +72,8 @@ function loopThrough(newArr, steps) {
 }
 ```
 
- * Return odd numbers between a start and end number given
+
+__* Return odd numbers between a start and end number given__
  
 ```javascript
 function oddNumbers(l, r) {
@@ -80,7 +86,7 @@ function oddNumbers(l, r) {
 ```
 
 
-* A function that validates IPV4 
+__* A function that validates IPV4__
 
 ```javascript
 function isIPv4Address(inputString) {
@@ -92,7 +98,8 @@ function isIPv4Address(inputString) {
 }
 ```
 
-* Function that given a string can tell if its palindrome
+
+__* Function that given a string can tell if its palindrome__
 
 ```javascript
 function checkPalindrome(inputString) {
@@ -102,7 +109,7 @@ function checkPalindrome(inputString) {
 }
 ```
 
-* area of a polygon for a given number
+__* area of a polygon for a given number__
 
 ```javascript
 function shapeArea(n) {
@@ -111,7 +118,7 @@ function shapeArea(n) {
 }
 ```
 
-* Call a function inner to get the sum of two number
+__* Call a function inner to get the sum of two number__
 
 ```javascript
 function sum(a){
@@ -120,12 +127,12 @@ function sum(a){
   }
 }
 ```
-or 
+__or__
 ```javascript
 const sum = a => b => a + b
 ```
 
-* Plus Minus
+__* Plus Minus__
 
 *Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros.*
 
