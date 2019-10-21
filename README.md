@@ -149,3 +149,24 @@ function plusMinus(arr) {
     ]
 }
 ```
+
+__*Staircase__
+
+*Complete the staircase function in the editor below. It should print a staircase as described above.
+
+staircase has the following parameter(s):
+
+*n: an integer*
+```javascript
+function staircase(n) {
+    let hashtag = '#'
+    let space = ' '
+    let stair = Array(n)
+                .fill(n)
+                .map((value, key) => `${space.repeat(value - (key + 1))}${hashtag.repeat(key + 1)}`)
+                    
+    return stair
+}
+
+staircase(20).join('/n')
+```
