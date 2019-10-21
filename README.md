@@ -156,7 +156,9 @@ __*Staircase__
 
 staircase has the following parameter(s):
 
-*n: an integer*
+n: an integer*
+
+
 ```javascript
 function staircase(n) {
     let hashtag = '#'
