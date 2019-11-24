@@ -118,7 +118,7 @@ function shapeArea(n) {
 }
 ```
 
-__* Call a function inner to get the sum of two number__
+__* Call a inner function to get the sum of two number__
 
 ```javascript
 function sum(a){
