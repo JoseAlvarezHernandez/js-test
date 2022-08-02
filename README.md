@@ -172,3 +172,21 @@ function staircase(n) {
 
 staircase(20).join('/n')
 ```
+or 
+
+```javascript
+
+function stairCase(n) {
+  return new Array(n)
+    .fill("#")
+    .map(
+    	(pos, index) =>
+    	     pos
+		.repeat(index + 1)
+		.padStart(n, " "))
+    .join("\n");
+}
+```
+```html
+<pre>{stairCase(20)}</pre>
+```
